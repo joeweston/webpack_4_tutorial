@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://joeweston.github.io/webpack_4_tutorial/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development ./src/assets/scripts/index.js --output ./dist/assets/scripts/main.js --watch",
-    "scss" : "node-sass --watch src/assets/stylesheets -o dist/assets/stylesheets",
+    "scss": "node-sass --watch src/assets/stylesheets -o dist/assets/stylesheets",
     "scss-min": "node-sass src/assets/stylesheets -o dist/assets/stylesheets --output-style compressed",
-    "watch-all" : "npm run dev & npm run scss",
-    "build": "npm run scss-min & webpack --mode production ./src/assets/scripts/index.js --output ./dist/assets/scripts/main.js"
+    "watch-all": "npm run dev & npm run scss",
+    "build": "npm run scss-min & webpack --mode production ./src/assets/scripts/index.js --output ./dist/assets/scripts/main.js",
+
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +22,7 @@
     "webpack-cli": "^3.1.0"
   },
   "dependencies": {
+    "gh-pages": "^1.2.0",
     "node-sass": "^4.9.3"
   }
 }
