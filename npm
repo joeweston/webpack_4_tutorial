@@ -1,0 +1,23 @@
+
+> webpack-4-tutorial@1.0.0 watch-all /Users/joe/webpack4learning/webpack-4-tutorial
+> npm run dev & npm run scss "watch-all"
+
+
+> webpack-4-tutorial@1.0.0 scss /Users/joe/webpack4learning/webpack-4-tutorial
+> node-sass --watch src/assets/stylesheets -o dist/assets/stylesheets "watch-all"
+
+
+> webpack-4-tutorial@1.0.0 dev /Users/joe/webpack4learning/webpack-4-tutorial
+> webpack --mode development ./src/scripts/index.js --output ./dist/scripts/main.js --watch
+
+
+webpack is watching the files…
+
+Hash: d2b8706b058aa9902cd5
+Version: webpack 4.17.1
+Time: 140ms
+Built at: 2018-08-31 23:09:01
+  Asset      Size  Chunks             Chunk Names
+main.js  3.86 KiB    main  [emitted]  main
+Entrypoint main = main.js
+[./src/scripts/index.js] 42 bytes {main} [built]
